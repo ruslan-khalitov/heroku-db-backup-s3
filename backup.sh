@@ -75,7 +75,6 @@ s3_endpoint_arg=""
 
 if [[ ! -z "$DB_BACKUP_AWS_S3_ENDPOINT_URL" ]]; then
   s3_endpoint_arg="--endpoint-url $DB_BACKUP_AWS_S3_ENDPOINT_URL"
-  exit 1
 fi
 
 printf "${Green}Start dump${EC}"
